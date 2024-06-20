@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 70%; /* Fill 70% of the screen width */
+    max-width: 500px; /* Limit container width */
+    padding: 40px; /* Adjusted padding */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease; /* Removed movement animation */
+}
+
+h1, p {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block; /* Display labels inline */
+}
+
+.input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 85px); /* Adjusted input width */
+}
+
+.input::placeholder {
+    color: #ccc;
+}
+
+.input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #007bff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
